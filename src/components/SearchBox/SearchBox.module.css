@@ -1,0 +1,22 @@
+.searchBoxContainer {
+  box-sizing: border-box;
+  display: flex;
+  width: 350px;
+  padding: 15px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+.searchBoxInput {
+  border: none;
+  background: white;
+  display: block;
+}
+.searchBoxInput:focus {
+  background: white;
+  outline: none;
+}
+.searchBoxLabel {
+  text-align: start;
+}
