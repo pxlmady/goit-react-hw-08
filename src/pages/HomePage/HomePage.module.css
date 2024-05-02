@@ -1,0 +1,13 @@
+.homePageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.description {
+  max-width: 511px;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 20px;
+}

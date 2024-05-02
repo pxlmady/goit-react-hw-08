@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsOps";
+import { addContact } from "../../redux/contacts/operations";
 import css from "./ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -26,8 +26,8 @@ function ContactForm() {
       .default("")
       .nullable()
       .matches(
-        /^[\d\s-]+$/,
-        "Phone number must contain only digits, spaces, or dashes!"
+        /^[\d\s-+]+$/,
+        "Phone number must contain only digits, spaces, dashes, or plus signs!"
       )
       .min(MIN_DIGITS_PHONE_VALIDATION, `To short!`),
   });

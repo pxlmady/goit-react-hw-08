@@ -3,13 +3,23 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: black;
+  color: #0a0a0a;
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  width: 100vw;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 a {
@@ -21,18 +31,26 @@ a:hover {
   color: #535bf2;
 }
 
+header {
+  z-index: 90;
+  background-color: #fff;
+}
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f0f2ff;
+  background-image: url(https://cdn.dribbble.com/userupload/5516931/file/original-214fdf27551f3f83695af324d5aa197d.jpg?resize=1024x655);
+  background-size: cover;
 }
 
 h1 {
+  margin-bottom: 0;
   font-size: 3.2em;
   line-height: 1.1;
+  color: #0a0a0a;
 }
 
 button {
@@ -52,15 +70,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-hr {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.pageTitle {
-  color: white;
 }
 
 @media (prefers-color-scheme: light) {

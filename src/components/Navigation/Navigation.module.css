@@ -1,0 +1,23 @@
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.navLink {
+  text-decoration: none;
+  color: #213547;
+  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active {
+  color: #262626;
+}
+.navLink:hover {
+  color: #262626;
+}
+.navLink:focus {
+  color: #262626;
+}
+
+.homeContactsPagesLink {
+  display: flex;
+  gap: 15px;
+}
