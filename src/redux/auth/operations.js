@@ -25,7 +25,6 @@ export const register = createAsyncThunk(
       );
       return data;
     } catch (error) {
-      toast.error(error.message);
       return thunkApi.rejectWithValue(error.message);
     }
   }
@@ -44,7 +43,6 @@ export const login = createAsyncThunk(
       );
       return data;
     } catch (error) {
-      toast.error(error.message);
       return thunkApi.rejectWithValue(error.message);
     }
   }
@@ -66,7 +64,6 @@ export const refreshUser = createAsyncThunk(
       );
       return data;
     } catch (error) {
-      toast.error(error.message);
       return thunkApi.rejectWithValue(error.message);
     }
   }
@@ -83,7 +80,6 @@ export const logout = createAsyncThunk("auth/logout", async (_, thunkApi) => {
     });
     return data;
   } catch (error) {
-    toast.error(error.message);
     return thunkApi.rejectWithValue(error.message);
   }
 });
